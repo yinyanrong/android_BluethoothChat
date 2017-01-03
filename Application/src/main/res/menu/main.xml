@@ -1,0 +1,44 @@
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<!--     app:showAsAction 和android:showAsAction-->
+    <!--app:showAsAction-->
+
+    <!--它有三个可选项-->
+    <!--1.always：总是显示在界面上-->
+    <!--2.never：不显示在界面上，只让出现在右边的三个点中-->
+    <!--3.ifRoom：如果有位置才显示，不然就出现在右边的三个点中-->
+
+
+    <!--android:showAsAction-->
+
+    <!--这个属性可接受的值有：-->
+
+    <!--1.alaways:这个值会使菜单项一直显示在ActionBar上。-->
+
+    <!--2.ifRoom:如果有足够的空间,这个值会使菜单显示在ActionBar上。-->
+
+    <!--3.never:这个值菜单永远不会出现在ActionBar是。-->
+
+    <!--4.withText:这个值使菜单和它的图标，菜单文本一起显示。-->
+
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_toggle_log"
+          android:title="@string/sample_show_log"
+        android:showAsAction="always" />
+
+</menu>
